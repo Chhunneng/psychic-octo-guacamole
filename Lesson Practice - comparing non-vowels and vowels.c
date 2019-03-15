@@ -3,14 +3,14 @@ main()
 {
 	int b=0,c=0;
 	char input;
-	while(input!='!')
+	while(input!='\0'|| input!="\n")
 	{
 		scanf(" %c",&input);
 		if(input == 'a' || input == 'e' || input =='i' || input == 'o' || input == 'u')
 			b +=1;
 		else if(input=='\n')
 			b=b;
-		else if(input=='!')
+		else if(input=='\n'|| input=='\0')
 			break;
 		else
 			c +=1;
